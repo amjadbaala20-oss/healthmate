@@ -18,7 +18,6 @@ import {
   Award,
 } from "lucide-react";
 import { RobotDoctor } from "./RobotDoctor";
-import { BrandLogo } from "./BrandLogo";
 import { useAuth } from "./AuthContext";
 
 // Counter Component for Statistics
@@ -134,10 +133,11 @@ export function OnePage() {
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => scrollToTop()}
             >
-              <BrandLogo />
-              <span className="text-xl font-bold">
-                <span className="text-white">Health</span>
-                <span className="text-[#74d1dc]">Mate</span>
+              <div className="w-8 h-8 bg-gradient-to-br from-[#74d1dc] to-[#5ab8c4] rounded-lg flex items-center justify-center">
+                <span className="text-black font-bold text-xl">H</span>
+              </div>
+              <span className="text-xl font-bold text-[#74d1dc]">
+                HealthMate
               </span>
             </div>
 

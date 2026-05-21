@@ -13,7 +13,6 @@ import {
   User,
 } from "lucide-react";
 import { RobotDoctor } from "../RobotDoctor";
-import { BrandLogo } from "../BrandLogo";
 import { useAuth } from "../AuthContext";
 
 export function AIChatPage() {
@@ -309,10 +308,7 @@ export function AIChatPage() {
           >
             ← Back Home
           </button>
-          <span className="text-lg font-bold">
-            <span className="text-white">Health</span>
-            <span className="text-[#74d1dc]">Mate</span>
-          </span>
+          <span className="text-[#74d1dc] font-bold text-lg">HealthMate</span>
           <button
             onClick={handleLogout}
             className="px-4 py-2 border border-[#74d1dc] text-[#74d1dc] rounded-lg hover:bg-[#74d1dc] hover:text-black transition-all text-sm"
@@ -334,10 +330,11 @@ export function AIChatPage() {
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => navigate("/")}
             >
-              <BrandLogo />
-              <span className="text-xl font-bold">
-                <span className="text-white">Health</span>
-                <span className="text-[#74d1dc]">Mate</span>
+              <div className="w-8 h-8 bg-gradient-to-br from-[#74d1dc] to-[#5ab8c4] rounded-lg flex items-center justify-center">
+                <span className="text-black font-bold text-xl">H</span>
+              </div>
+              <span className="text-xl font-bold text-[#74d1dc]">
+                HealthMate
               </span>
             </div>
 
