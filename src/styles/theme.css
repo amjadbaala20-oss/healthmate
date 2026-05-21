@@ -179,3 +179,32 @@
     line-height: 1.5;
   }
 }
+
+/* Dark scrollbars for AI chat (matches HealthMate black + teal theme) */
+.chat-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2d3a3c #0a0a0a;
+}
+
+.chat-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.chat-scrollbar::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb {
+  background: #2d3a3c;
+  border-radius: 9999px;
+  border: 2px solid #0a0a0a;
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(116, 209, 220, 0.45);
+}
+
+.chat-scrollbar::-webkit-scrollbar-corner {
+  background: #0a0a0a;
+}
